@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { useState } from 'react';
 import { HiOutlineHome } from "react-icons/hi";
+import { ImLinkedin, ImGithub, ImMail, ImProfile } from "react-icons/im";
 
 export default function Home() {
   const [slide, setSlide] = useState(0);
@@ -33,11 +34,24 @@ export default function Home() {
                   About Me
                 </div>
                 <div className="text-black text-2xl font-medium p-4 hover:scale-110 hover:text-blue-900">
-                  Resume
-                </div>
-                <div className="text-black text-2xl font-medium p-4 hover:scale-110 hover:text-blue-900">
                   Projects
                 </div>
+              </div>
+              <div className="flex flex-row">
+                <a href="https://github.com/jgoyk">
+                  <ImGithub className="text-black text-2xl mx-2 hover:scale-110"/>
+                </a>
+                <a href="mailto:joshua@goykhman.com">
+                  <ImMail className="text-black text-2xl mx-2 hover:scale-110"/>
+                </a>
+                <a href="">
+                  <ImProfile className="text-black text-2xl mx-2 hover:scale-110"/>
+                </a>
+                <a href="www.linkedin.com/in/josh-goykhman">
+                  <ImLinkedin className="text-black text-2xl mx-2 hover:scale-110"/>
+                </a>
+                
+
               </div>
             </div>
           </div>
