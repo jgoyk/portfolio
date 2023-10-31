@@ -47,7 +47,7 @@ export default function Home() {
                 <a href="">
                   <ImProfile className="text-black text-2xl mx-2 hover:scale-110"/>
                 </a>
-                <a href="www.linkedin.com/in/josh-goykhman">
+                <a href="https://www.linkedin.com/in/josh-goykhman">
                   <ImLinkedin className="text-black text-2xl mx-2 hover:scale-110"/>
                 </a>
                 
