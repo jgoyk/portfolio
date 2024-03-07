@@ -140,7 +140,7 @@ export default function Home() {
             
             <div className="flex flex-row ">
               <div className="text-black text-2xl font-medium p-4">
-                18 Year Old at Rutgers University intending to major in Statistics and Computer Science, Class of 2027
+                Hi! I am Josh. I am a 18 year old first year student at Rutgers University. I intend to double-major in Computer Science and Statistics. Outside of school, I enjoy baking, playing basketball, and working out. 
               </div>
             </div>
           </div>
