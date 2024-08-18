@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link';
 import { useState } from 'react';
 import { HiOutlineHome } from "react-icons/hi";
 import { ImLinkedin, ImGithub, ImMail, ImProfile } from "react-icons/im";
@@ -71,53 +72,59 @@ export default function Home() {
             
             <div className="flex flex-row ">
               <div className="grid grid-cols-2 grid-flow-row gap-10">
+                <Link href="https://github.com/jgoyk/Senior-Support-Extension">
+                  <div className="flex flex-col">
+                    <div className="text-black text-2xl font-medium text-center">
+                      Senior Support Extension
+                    </div>
+                    <Image
+                      className="relative rounded-md border-double border-4 p-4 border-black m-4 bg-white bg-opacity-30 p-auto min-h-[300px] min-w-[37px] "
+                      src="/icon.png"
+                      alt="Senior Support Icon"
+                      width={300}
+                      height={37}
+                      priority
+                    />
+                  </div>
+                </Link>
+                <Link href="https://github.com/jgoyk/WorkoutTracker">
+                  <div className="flex flex-col hover:scale-105">
+                    <div className="text-black text-2xl font-medium text-center">
+                    🚧 Workout Tracker 🚧
+                    </div>
+                    <Image
+                      className="relative rounded-md border-double border-4 py-3 border-black m-4 bg-white bg-opacity-30 p-auto min-h-[300px] min-w-[37px]"
+                      src="/icon2.png"
+                      alt="Josh Goykhman in a Suit"
+                      width={300}
+                      height={37}
+                      priority
+                    />
+                  </div>
+                </Link>
+                <Link href="https://github.com/jgoyk/ruschedule">
+                  <div className="flex flex-col">
+                    <div className="text-black text-2xl font-medium text-center">
+                    🚧 Calendar AI 🚧
+                    </div>
+                    <Image
+                      className="relative rounded-md border-double border-4 p-4 border-black m-4 bg-white bg-opacity-30 p-auto min-h-[300px] min-w-[37px]"
+                      src="/calendar.png"
+                      alt="Calendar Icon"
+                      width={300}
+                      height={37}
+                      priority
+                    />
+                  </div>
+                </Link>
                 <div className="flex flex-col">
                   <div className="text-black text-2xl font-medium text-center">
-                    Senior Support Extension
+                    More Coming Soon...
                   </div>
                   <Image
-                    className="relative rounded-md border-double border-4 p-4 border-black m-4 bg-white bg-opacity-30 "
-                    src="/icon.png"
-                    alt="Senior Support Icon"
-                    width={300}
-                    height={37}
-                    priority
-                  />
-                </div>
-                <div className="flex flex-col hover:scale-105">
-                  <div className="text-black text-2xl font-medium text-center">
-                    Workout Tracker
-                  </div>
-                  <Image
-                    className="relative rounded-md border-double border-4 py-3 border-black m-4 bg-white bg-opacity-30 min-h-[80%]"
-                    src="/icon2.png"
-                    alt="Josh Goykhman in a Suit"
-                    width={300}
-                    height={37}
-                    priority
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <div className="text-black text-2xl font-medium text-center">
-                    Project 1
-                  </div>
-                  <Image
-                    className="relative rounded-md border-double border-4 p-4 border-black m-4 bg-white bg-opacity-30"
-                    src="/josh.png"
-                    alt="Josh Goykhman in a Suit"
-                    width={300}
-                    height={37}
-                    priority
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <div className="text-black text-2xl font-medium text-center">
-                    Project 1
-                  </div>
-                  <Image
-                    className="relative rounded-md border-double border-4 p-4 border-black m-4 bg-white bg-opacity-30"
-                    src="/josh.png"
-                    alt="Josh Goykhman in a Suit"
+                    className="relative rounded-md border-double border-4 p-4 border-black m-4 bg-white bg-opacity-30 p-auto min-h-[300px] min-w-[37px]"
+                    src="/comingsoon.png"
+                    alt="Sign Icon with text 'Coming Soon'"
                     width={300}
                     height={37}
                     priority
@@ -138,10 +145,17 @@ export default function Home() {
               <HiOutlineHome className="h-10 w-10 text-black mr-5 hover:scale-110 hover:text-blue-900" onClick={handleHomeClick}/>
             </div>
             
-            <div className="flex flex-row ">
-              <div className="text-black text-2xl font-medium p-4">
-                Hi! I am Josh. I am a 18 year old first year student at Rutgers University. I intend to double-major in Computer Science and Statistics. Outside of school, I enjoy baking, playing basketball, and working out. 
-              </div>
+            <div className="flex flex-col ">
+              <span className="text-black text-2xl font-medium p-4">
+                Hi! I am Josh. I am a 18 year old first year student at Rutgers University. 
+                I intend to double-major in Computer Science and Statistics.
+              </span>
+              <span className="text-black text-2xl font-medium p-4">
+                Outside of school, I enjoy baking, playing basketball, and working out. 
+              </span>
+              <span className="text-black text-2xl font-medium p-4">
+                I love all animals, especially my pug Masha.  
+              </span>
             </div>
           </div>
         </div>
