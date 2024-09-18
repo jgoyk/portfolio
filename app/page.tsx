@@ -73,7 +73,7 @@ export default function Home() {
             <div className="flex flex-row ">
               <div className="grid grid-cols-2 grid-flow-row gap-10">
                 <Link href="https://github.com/jgoyk/Senior-Support-Extension">
-                  <div className="flex flex-col">
+                  <div className="flex flex-col hover:scale-105">
                     <div className="text-black text-2xl font-medium text-center">
                       Senior Support Extension
                     </div>
@@ -103,7 +103,7 @@ export default function Home() {
                   </div>
                 </Link>
                 <Link href="https://github.com/jgoyk/ruschedule">
-                  <div className="flex flex-col">
+                  <div className="flex flex-col hover:scale-105">
                     <div className="text-black text-2xl font-medium text-center">
                     🚧 Calendar AI 🚧
                     </div>
